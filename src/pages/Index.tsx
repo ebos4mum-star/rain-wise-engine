@@ -4,6 +4,7 @@ import WhoItsFor from "@/components/sections/WhoItsFor";
 import Problem from "@/components/sections/Problem";
 import Solution from "@/components/sections/Solution";
 import Features from "@/components/sections/Features";
+import Analytics from "@/components/sections/Analytics";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Comparison from "@/components/sections/Comparison";
 import Benefits from "@/components/sections/Benefits";
@@ -23,6 +24,9 @@ const Index = () => {
         <Solution />
         <section id="features">
           <Features />
+        </section>
+        <section id="analytics">
+          <Analytics />
         </section>
         <section id="how-it-works">
           <HowItWorks />

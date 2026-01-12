@@ -114,7 +114,7 @@ const Hero = () => {
               
               <motion.img
                 src={heroPhones}
-                alt="RainWatr App - Lead Inbox, Apartment Matches, Messages"
+                alt="RainWatr App - Lead Inbox, Apartment Matches, Messages, Analytics Dashboard, Commission Tracker"
                 className="relative w-full max-w-lg mx-auto drop-shadow-2xl"
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}

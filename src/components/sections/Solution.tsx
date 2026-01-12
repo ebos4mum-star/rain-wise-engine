@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { 
   UserCheck, Brain, MessageCircle, Heart, Zap,
-  ClipboardList, User, Building, Send, Calendar, Receipt
+  ClipboardList, User, Building, Send, Calendar, Receipt, BarChart3
 } from "lucide-react";
 
 const aiFeatures = [
@@ -18,6 +18,7 @@ const allInOne = [
   { icon: Building, text: "Apartment matching" },
   { icon: Send, text: "Text messaging" },
   { icon: Calendar, text: "Tour scheduling" },
+  { icon: BarChart3, text: "Analytics & insights" },
   { icon: Receipt, text: "Commission tracking" },
 ];
 

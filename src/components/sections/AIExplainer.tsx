@@ -22,8 +22,12 @@ const AIExplainer = () => {
             <span className="text-rain-glow">Smart Locator Engine</span>.
           </h2>
 
-          <p className="text-xl text-primary-foreground/80 mb-12 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-foreground/80 mb-6 max-w-3xl mx-auto">
             RainWatr uses advanced AI to understand renters' needs, analyze real apartment data, choose the best matches, decide what to text, and remind you when to follow up — automatically.
+          </p>
+          
+          <p className="text-lg text-primary-foreground/70 mb-12 max-w-2xl mx-auto">
+            It doesn't just automate. It <span className="text-rain-glow font-semibold">learns</span> which renters, apartments, and messages actually close deals.
           </p>
 
           {/* AI capabilities */}
