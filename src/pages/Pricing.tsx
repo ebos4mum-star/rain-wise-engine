@@ -29,27 +29,9 @@ const proFeatures = [
   "Unlimited leads",
   "Priority support",
   "Custom AI recommendations",
-];
-
-const addOns = [
-  {
-    icon: MessageSquare,
-    title: "Extra SMS Credits",
-    description: "Send more messages to your leads with additional SMS packages.",
-    price: "$9.99/500 credits",
-  },
-  {
-    icon: Sparkles,
-    title: "Advanced AI Insights",
-    description: "Get deeper AI-powered analysis and ranking for better matches.",
-    price: "$14.99/month",
-  },
-  {
-    icon: BarChart3,
-    title: "Exportable Reports",
-    description: "Download analytics and commission reports for your records.",
-    price: "$7.99/month",
-  },
+  "Extra SMS credits included",
+  "Advanced AI insights & ranking",
+  "Exportable analytics & commission reports",
 ];
 
 const valuePoints = [
@@ -325,54 +307,6 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Optional Add-Ons */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={stagger}
-            className="text-center mb-12"
-          >
-            <motion.h2
-              variants={fadeInUp}
-              className="text-3xl md:text-4xl font-bold text-foreground mb-4"
-            >
-              Optional Add-Ons
-            </motion.h2>
-            <motion.p
-              variants={fadeInUp}
-              className="text-lg text-muted-foreground"
-            >
-              Boost your workflow with additional features when you need them.
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={stagger}
-            className="grid md:grid-cols-3 gap-6"
-          >
-            {addOns.map((addon) => (
-              <motion.div
-                key={addon.title}
-                variants={fadeInUp}
-                className="bg-card rounded-2xl p-6 border border-border shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="w-10 h-10 rounded-lg bg-rain-surface flex items-center justify-center mb-4">
-                  <addon.icon className="w-5 h-5 text-rain-accent" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{addon.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{addon.description}</p>
-                <p className="text-rain-accent font-semibold">{addon.price}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* Final CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-br from-rain-deep to-rain-medium">
