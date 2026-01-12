@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RainButton } from "@/components/ui/RainButton";
 import { Droplets, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   { label: "Features", href: "#features" },
   { label: "How It Works", href: "#how-it-works" },
-  { label: "Why RainWatr", href: "#why-rainwatr" },
+  { label: "Pricing", href: "/pricing", isRoute: true },
 ];
 
 const Navbar = () => {
@@ -38,25 +39,34 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.isRoute ? (
+              <Link
+                key={link.label}
+                to={link.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </a>
+            )
+          )}
         </div>
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
-          <RainButton variant="ghost" size="sm">
-            Log In
-          </RainButton>
-          <RainButton variant="accent" size="sm">
-            Start Free
-          </RainButton>
+          <Link to="/pricing">
+            <RainButton variant="accent" size="sm">
+              Start Free
+            </RainButton>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -78,23 +88,33 @@ const Navbar = () => {
             className="lg:hidden bg-background border-b border-border overflow-hidden"
           >
             <div className="container py-6 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="text-lg font-medium text-foreground py-2"
-                  onClick={() => setIsMobileOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.isRoute ? (
+                  <Link
+                    key={link.label}
+                    to={link.href}
+                    className="text-lg font-medium text-foreground py-2"
+                    onClick={() => setIsMobileOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className="text-lg font-medium text-foreground py-2"
+                    onClick={() => setIsMobileOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <div className="flex flex-col gap-3 pt-4 border-t border-border">
-                <RainButton variant="outline" className="w-full">
-                  Log In
-                </RainButton>
-                <RainButton variant="accent" className="w-full">
-                  Start Free
-                </RainButton>
+                <Link to="/pricing" onClick={() => setIsMobileOpen(false)}>
+                  <RainButton variant="accent" className="w-full">
+                    Start Free
+                  </RainButton>
+                </Link>
               </div>
             </div>
           </motion.div>
