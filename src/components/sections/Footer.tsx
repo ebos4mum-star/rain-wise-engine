@@ -1,4 +1,5 @@
 import { Droplets } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,13 +14,13 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex items-center gap-6">
-            <a href="#" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            <Link to="/privacy" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Privacy
-            </a>
-            <a href="#" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            </Link>
+            <Link to="/terms" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Terms
-            </a>
-            <a href="#" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            </Link>
+            <a href="mailto:support@rainwatr.com" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Contact
             </a>
           </div>
