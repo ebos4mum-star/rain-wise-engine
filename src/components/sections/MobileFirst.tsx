@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Smartphone, MessageCircle, Calendar, Receipt } from "lucide-react";
+import { Smartphone, MessageCircle, Calendar, Receipt, BarChart3, Building2 } from "lucide-react";
 
 const MobileFirst = () => {
   return (
@@ -18,13 +18,15 @@ const MobileFirst = () => {
               <span className="text-rain-accent">Android</span>.
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              RainWatr is designed for locators who work on the go — with leads, messages, tours, and commissions always in your pocket.
+              RainWatr is designed for locators on the go — with leads, messages, matches, analytics, tours, and commissions always in your pocket.
             </p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {[
                 { icon: Smartphone, text: "Leads" },
                 { icon: MessageCircle, text: "Messages" },
+                { icon: Building2, text: "Matches" },
+                { icon: BarChart3, text: "Analytics" },
                 { icon: Calendar, text: "Tours" },
                 { icon: Receipt, text: "Commissions" },
               ].map((item, index) => (

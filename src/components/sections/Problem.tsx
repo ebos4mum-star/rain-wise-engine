@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { AlertCircle, Ghost, Clock, DollarSign, MessageSquare } from "lucide-react";
+import { AlertCircle, Ghost, Clock, DollarSign, MessageSquare, HelpCircle } from "lucide-react";
 
 const problems = [
   { icon: AlertCircle, text: "Leads come from everywhere" },
@@ -7,6 +7,7 @@ const problems = [
   { icon: Clock, text: "You forget to follow up" },
   { icon: DollarSign, text: "You lose track of commissions" },
   { icon: MessageSquare, text: "You're always texting" },
+  { icon: HelpCircle, text: "You don't know what's actually working" },
 ];
 
 const Problem = () => {

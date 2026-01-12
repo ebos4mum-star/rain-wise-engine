@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Zap, Clock, Shield, Banknote } from "lucide-react";
+import { TrendingUp, Zap, Clock, Shield, Banknote, BarChart3 } from "lucide-react";
 
 const benefits = [
   { icon: TrendingUp, text: "Close more deals" },
@@ -7,6 +7,7 @@ const benefits = [
   { icon: Clock, text: "Work fewer hours" },
   { icon: Shield, text: "Never lose a lead" },
   { icon: Banknote, text: "Get paid on every match" },
+  { icon: BarChart3, text: "Know what's working" },
 ];
 
 const Benefits = () => {
@@ -25,7 +26,7 @@ const Benefits = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.text}

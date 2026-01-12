@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Brain, Building2, MessageSquare, CalendarCheck, Receipt } from "lucide-react";
+import { Brain, Building2, MessageSquare, CalendarCheck, Receipt, BarChart3 } from "lucide-react";
 
 const features = [
   {
     icon: Brain,
     title: "AI Lead Qualification",
-    description: "Automatically understands renter budget, timing, and preferences.",
+    description: "Understands renter budget, timing, and preferences automatically.",
   },
   {
     icon: Building2,
@@ -20,12 +20,17 @@ const features = [
   {
     icon: CalendarCheck,
     title: "Tour & Follow-Up Automation",
-    description: "Never forget to follow up or confirm tours.",
+    description: "Never forget to confirm or follow up on a tour.",
   },
   {
     icon: Receipt,
     title: "Commission Pipeline",
-    description: "Track every match from lead → tour → invoice → check.",
+    description: "Track every deal from lead → tour → lease → paid.",
+  },
+  {
+    icon: BarChart3,
+    title: "Real-Time Analytics",
+    description: "See exactly what leads, apartments, and messages are making you money.",
   },
 ];
 

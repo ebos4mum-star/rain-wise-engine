@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { X, Check } from "lucide-react";
 
 const comparisons = [
+  { traditional: "No visibility", rainwatr: "Real-time analytics" },
   { traditional: "Manual texting", rainwatr: "AI-powered SMS" },
   { traditional: "Guessing", rainwatr: "AI reasoning" },
   { traditional: "Disorganized", rainwatr: "One smart system" },
