@@ -15,25 +15,79 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
 
-const allFeatures = [
-  "Unlimited leads",
-  "Two-way SMS messaging",
-  "Automated SMS workflows",
-  "AI-assisted replies & follow-ups",
-  "Tour scheduling",
-  "Tour reminders",
-  "Send tour details via SMS",
-  "Post-tour follow-up messages",
-  "Native phone push notifications",
-  "In-app notifications",
-  "Interactive push actions (Yes / No)",
-  "Deep links to leads & tours",
-  "Custom AI recommendations",
-  "Advanced AI insights & lead ranking",
-  "Smart follow-up timers",
-  "Quiet hours protection",
-  "Advanced analytics & insights",
-  "Exportable analytics & commission reports",
+const featureCategories = [
+  {
+    title: "Lead & Client Management",
+    features: [
+      "Unlimited leads",
+      "Lead lifecycle tracking (New → Applied → Closed)",
+      "Smart lead prioritization (Hot / Warm / Cold)",
+      "Lead activity timeline",
+    ],
+  },
+  {
+    title: "AI Communication & Automation",
+    features: [
+      "Two-way SMS messaging",
+      "Automated SMS workflows",
+      "AI-assisted message suggestions",
+      "AI follow-up automation",
+      "Smart follow-up timers",
+      "Human-sounding AI messages",
+      "Quiet hours protection",
+    ],
+  },
+  {
+    title: "Tours & Post-Tour Automation",
+    features: [
+      "Tour scheduling & reminders",
+      "Send tour details via SMS",
+      "Tour completion tracking",
+      "Post-tour AI follow-up messages",
+      "Renter sentiment detection",
+    ],
+  },
+  {
+    title: "Second Chance System",
+    highlight: true,
+    features: [
+      "Automatic \"Second Chance\" outreach after tours",
+      "AI detects objections and hesitation",
+      "AI asks clarifying questions",
+      "AI suggests similar units automatically",
+      "Recover deals most locators lose",
+    ],
+  },
+  {
+    title: "Notifications & Actions",
+    features: [
+      "Native phone push notifications",
+      "In-app notifications",
+      "Interactive push actions (Yes / No)",
+      "One-tap actions that trigger AI SMS",
+      "Deep links to leads & tours",
+    ],
+  },
+  {
+    title: "AI Intelligence & Insights",
+    features: [
+      "Custom AI recommendations",
+      "Advanced AI insights & lead ranking",
+      "Engagement scoring",
+      "Suggested next best action",
+    ],
+  },
+  {
+    title: "Analytics & Commissions",
+    highlight: true,
+    features: [
+      "Advanced analytics dashboard",
+      "Lead-to-tour conversion tracking",
+      "Tour-to-application tracking",
+      "Commission visibility per lead",
+      "Exportable commission reports",
+    ],
+  },
 ];
 
 const Pricing = () => {
@@ -83,7 +137,7 @@ const Pricing = () => {
               variants={fadeInUp}
               className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto"
             >
-              Both plans include the <strong className="text-foreground">full Rainwatr experience</strong> — 
+              Both plans include the <strong className="text-foreground">full Rainwatr platform</strong> — 
               the only difference is SMS volume.
             </motion.p>
 
@@ -146,7 +200,7 @@ const Pricing = () => {
             >
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Starter Locator</h3>
-                <p className="text-muted-foreground">For solo locators with moderate messaging volume.</p>
+                <p className="text-muted-foreground">For solo locators with moderate SMS volume.</p>
               </div>
 
               <div className="mb-6">
@@ -177,17 +231,26 @@ const Pricing = () => {
                 <p className="text-sm text-muted-foreground">Includes up to 200 SMS per month.</p>
               </div>
 
-              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4 font-medium">Everything included:</p>
-              <ul className="space-y-3">
-                {allFeatures.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-rain-surface flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check className="w-3 h-3 text-rain-accent" />
+              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4 font-medium">Full platform included:</p>
+              
+              <div className="space-y-6">
+                {featureCategories.map((category) => (
+                  <div key={category.title}>
+                    <div className={`flex items-center gap-2 mb-2 ${category.highlight ? 'text-rain-accent' : 'text-foreground'}`}>
+                      {category.highlight && <Sparkles className="w-4 h-4" />}
+                      <h4 className="text-sm font-semibold">{category.title}</h4>
                     </div>
-                    <span className="text-sm text-foreground">{feature}</span>
-                  </li>
+                    <ul className="space-y-2">
+                      {category.features.map((feature) => (
+                        <li key={feature} className="flex items-start gap-2">
+                          <Check className="w-3.5 h-3.5 text-rain-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-xs text-muted-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </motion.div>
 
             {/* Pro Plan */}
@@ -235,7 +298,7 @@ const Pricing = () => {
                   <Zap className="w-4 h-4 text-rain-glow" />
                   <span className="font-semibold">Unlimited SMS messaging</span>
                 </div>
-                <p className="text-sm text-primary-foreground/80">No message counting. No throttling.</p>
+                <p className="text-sm text-primary-foreground/80">No message caps. No throttling. Built for high-volume closers.</p>
               </div>
 
               <p className="text-xs text-primary-foreground/70 uppercase tracking-wide mb-4 font-medium">Everything in Starter, plus:</p>
@@ -250,13 +313,19 @@ const Pricing = () => {
                   <div className="w-5 h-5 rounded-full bg-primary-foreground/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-primary-foreground" />
                   </div>
-                  <span className="text-sm">No message counting</span>
+                  <span className="text-sm">No message caps</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-primary-foreground/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-primary-foreground" />
                   </div>
                   <span className="text-sm">No throttling</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-primary-foreground/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check className="w-3 h-3 text-primary-foreground" />
+                  </div>
+                  <span className="text-sm">Built for high-volume closers</span>
                 </li>
               </ul>
             </motion.div>
@@ -270,7 +339,7 @@ const Pricing = () => {
             transition={{ delay: 0.3 }}
             className="text-center text-muted-foreground text-sm mt-8 max-w-xl mx-auto"
           >
-            Both plans include the full Rainwatr experience — the only difference is SMS volume.
+            Both plans include the full Rainwatr platform — the only difference is SMS volume.
             Upgrade or downgrade anytime.
           </motion.p>
         </div>
