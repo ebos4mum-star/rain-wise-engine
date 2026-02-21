@@ -1,5 +1,5 @@
-import { Droplets } from "lucide-react";
 import { Link } from "react-router-dom";
+import rainwatrLogo from "@/assets/rainwatr-logo.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Droplets className="w-6 h-6 text-rain-glow" />
+            <img src={rainwatrLogo} alt="RainWatr" className="w-7 h-7 rounded-lg" />
             <span className="text-xl font-bold font-display">RAINWATR</span>
           </div>
 
