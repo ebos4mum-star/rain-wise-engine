@@ -12,12 +12,17 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// GitHub Pages serves this project at /rain-wise-engine/, while custom domains serve at /
+const basename = window.location.hostname.endsWith("github.io")
+  ? "/rain-wise-engine"
+  : "/";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/terms" element={<Terms />} />
