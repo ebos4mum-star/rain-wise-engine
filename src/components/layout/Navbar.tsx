@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RainButton } from "@/components/ui/RainButton";
-import { Droplets, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import rainwatrLogo from "@/assets/rainwatr-logo.png";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -33,7 +34,7 @@ const Navbar = () => {
       <nav className="container flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <Droplets className="w-7 h-7 text-rain-accent group-hover:scale-110 transition-transform" />
+          <img src={rainwatrLogo} alt="RainWatr" className="w-8 h-8 rounded-lg group-hover:scale-110 transition-transform" />
           <span className="text-xl font-bold font-display text-foreground">RAINWATR</span>
         </a>
 
