@@ -5,11 +5,18 @@ const Footer = () => {
   return (
     <footer className="py-12 bg-rain-deep text-primary-foreground">
       <div className="container">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-            <img src={rainwatrLogo} alt="RainWatr" className="w-7 h-7 rounded-lg" />
-            <span className="text-xl font-bold font-display">RAINWATR</span>
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+          {/* Logo & Contact */}
+          <div className="flex flex-col items-center md:items-start gap-3">
+            <div className="flex items-center gap-2">
+              <img src={rainwatrLogo} alt="RainWatr" className="w-7 h-7 rounded-lg" />
+              <span className="text-xl font-bold font-display">RAINWATR</span>
+            </div>
+            <div className="flex flex-col items-center md:items-start gap-1 text-sm text-primary-foreground/70">
+              <a href="mailto:Support@rainwatr.app" className="hover:text-primary-foreground transition-colors">Support@rainwatr.app</a>
+              <a href="tel:+19205093267" className="hover:text-primary-foreground transition-colors">+1 (920) 509-3267</a>
+              <span>3463 Walnut St. Denver, CO 80205</span>
+            </div>
           </div>
 
           {/* Links */}
