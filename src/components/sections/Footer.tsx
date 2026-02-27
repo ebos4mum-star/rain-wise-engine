@@ -33,6 +33,9 @@ const Footer = () => {
             <Link to="/terms" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Terms
             </Link>
+            <Link to="/support" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              Support
+            </Link>
             <a href="mailto:support@rainwatr.com" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Contact
             </a>
