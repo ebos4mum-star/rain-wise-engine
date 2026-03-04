@@ -36,14 +36,21 @@ const Footer = () => {
             <Link to="/support" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Support
             </Link>
-            <a href="mailto:support@rainwatr.com" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            <a href="mailto:support@rainwatr.app" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Contact
             </a>
           </div>
         </div>
 
+        {/* SMS Compliance Disclosure */}
+        <div className="mt-8 pt-8 border-t border-white/10">
+          <p className="text-xs text-primary-foreground/50 max-w-2xl mx-auto text-center leading-relaxed">
+            <strong className="text-primary-foreground/60">SMS Communications</strong> — Rainwatr provides SMS messaging tools for apartment locators to communicate with renters regarding apartment tours, follow-ups, and rental inquiries. Message frequency varies. Message and data rates may apply. Recipients may reply STOP to unsubscribe or HELP for assistance. Rainwatr does not send unsolicited marketing messages.
+          </p>
+        </div>
+
         {/* Disclaimer */}
-        <div className="mt-8 pt-8 border-t border-white/10 text-center">
+        <div className="mt-6 pt-6 border-t border-white/10 text-center">
           <p className="text-sm text-primary-foreground/60 max-w-2xl mx-auto">
             RainWatr is not a listing marketplace. It is an AI-powered Smart Locator Engine for professional apartment locators.
           </p>
