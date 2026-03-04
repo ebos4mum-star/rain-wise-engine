@@ -145,6 +145,23 @@ const Privacy = () => {
                     <strong>Your responsibility:</strong> You must obtain proper consent from renters before sending SMS messages. RainWatr is not responsible for messages sent without consent.
                   </p>
                 </div>
+
+                <h3 className="text-xl font-medium text-rain-deep mt-6 mb-3">
+                  User Consent & Opt-Out
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Users may send SMS messages to renters through Rainwatr's messaging features. By enabling messaging features within Rainwatr, users confirm they have obtained appropriate consent from recipients before sending messages.
+                </p>
+                <p className="text-foreground/80 leading-relaxed mt-4">
+                  Recipients may opt out of SMS communications at any time by replying <strong>STOP</strong>.
+                  {" "}For assistance, recipients may reply <strong>HELP</strong>.
+                </p>
+                <p className="text-foreground/80 leading-relaxed mt-4">
+                  Message frequency varies depending on communication activity. <strong>Message and data rates may apply.</strong>
+                </p>
+                <p className="text-foreground/80 leading-relaxed mt-4">
+                  Rainwatr does not send unsolicited marketing messages. Messaging is limited to communication initiated by the locator in connection with renter inquiries, tours, follow-ups, or related service activity.
+                </p>
               </section>
 
               {/* Section 5 */}
@@ -183,7 +200,7 @@ const Privacy = () => {
                   We may share information with third parties only in the following circumstances:
                 </p>
                 <ul className="list-disc list-inside text-foreground/80 mt-4 space-y-2">
-                  <li><strong>Service providers:</strong> Companies that help us deliver the Service (SMS providers, cloud hosting, payment processors, analytics tools)</li>
+                  <li><strong>Service providers:</strong> Companies that help us deliver the Service (SMS providers, cloud hosting, payment processors, analytics tools). SMS messaging services may be provided by third-party telecommunications providers that enable message delivery.</li>
                   <li><strong>Legal compliance:</strong> When required by law, subpoena, or government request</li>
                   <li><strong>Safety and security:</strong> To protect against fraud, abuse, or security threats</li>
                   <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
@@ -296,13 +313,13 @@ const Privacy = () => {
                 </p>
                 <div className="bg-rain-deep/5 border border-rain-deep/10 rounded-lg p-4 mt-4">
                   <p className="text-foreground/80">
-                    <strong>Privacy inquiries:</strong> privacy@rainwatr.com
+                    <strong>Privacy inquiries:</strong> privacy@rainwatr.app
                   </p>
                   <p className="text-foreground/80 mt-2">
-                    <strong>General support:</strong> support@rainwatr.com
+                    <strong>General support:</strong> support@rainwatr.app
                   </p>
                   <p className="text-foreground/80 mt-2">
-                    <strong>Data requests:</strong> data@rainwatr.com
+                    <strong>Data requests:</strong> data@rainwatr.app
                   </p>
                 </div>
                 <p className="text-foreground/80 leading-relaxed mt-4">
