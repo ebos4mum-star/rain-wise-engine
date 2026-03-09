@@ -112,7 +112,7 @@ const Terms = () => {
                   SMS Opt-Out & Assistance
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  Recipients of SMS messages sent through Rainwatr may opt out at any time by replying <strong>STOP</strong> to the message.
+                  Recipients of SMS messages sent through RainWatr may opt out at any time by replying <strong>STOP</strong> to the message.
                   {" "}For assistance, recipients may reply <strong>HELP</strong>.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
