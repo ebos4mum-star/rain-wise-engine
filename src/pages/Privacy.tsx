@@ -207,7 +207,7 @@ const Privacy = () => {
                   We may share information with third parties only in the following circumstances:
                 </p>
                 <ul className="list-disc list-inside text-foreground/80 mt-4 space-y-2">
-                  <li><strong>Service providers:</strong> Companies that help us deliver the Service (SMS providers, cloud hosting, payment processors, analytics tools). SMS messaging services may be provided by third-party telecommunications providers that enable message delivery.</li>
+                  <li><strong>Service providers:</strong> Companies that help us deliver the Service (SMS providers, cloud hosting, payment processors, analytics tools). SMS messaging services are provided through third-party telecommunications providers such as Telnyx or similar messaging infrastructure providers that facilitate message delivery.</li>
                   <li><strong>Legal compliance:</strong> When required by law, subpoena, or government request</li>
                   <li><strong>Safety and security:</strong> To protect against fraud, abuse, or security threats</li>
                   <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
