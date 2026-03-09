@@ -333,6 +333,13 @@ const Privacy = () => {
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   We will respond to all privacy-related inquiries within 30 days.
                 </p>
+
+                <h3 className="text-xl font-medium text-rain-deep mt-6 mb-3">
+                  Governing Law
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  This Privacy Policy shall be governed by and construed in accordance with the laws of the United States and the state in which RainWatr operates, without regard to conflict of law provisions.
+                </p>
               </section>
 
               {/* Final Note */}
