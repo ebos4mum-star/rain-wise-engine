@@ -273,6 +273,7 @@ const Privacy = () => {
                   <li><strong>Export:</strong> Request a portable copy of your data in a common format</li>
                   <li><strong>Opt-out:</strong> Opt out of marketing communications at any time</li>
                   <li><strong>Restriction:</strong> Request restriction of processing in certain circumstances</li>
+                  <li><strong>Account Deletion:</strong> You may request deletion of your RainWatr account and associated data by contacting support or using the account deletion option within the application settings.</li>
                 </ul>
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   To exercise any of these rights, please contact us at privacy@rainwatr.com. We will respond to your request within the timeframe required by applicable law.
