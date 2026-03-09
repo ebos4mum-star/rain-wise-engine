@@ -10,6 +10,7 @@ import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
 import Support from "./pages/Support";
 import SmsConsent from "./pages/SmsConsent";
+import DeleteAccount from "./pages/DeleteAccount";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
