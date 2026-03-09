@@ -161,6 +161,13 @@ const Terms = () => {
                   <li>We reserve the right to change pricing with reasonable notice</li>
                   <li>Failure to pay may result in suspension or termination of your account</li>
                 </ul>
+
+                <h3 className="text-xl font-medium text-rain-deep mt-6 mb-3">
+                  Apple In-App Purchases
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  If you subscribe through the RainWatr iOS application, payment will be charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current billing period. Apple manages all billing, renewals, and cancellations for in-app subscriptions. Users may manage or cancel their subscriptions through their Apple account settings.
+                </p>
               </section>
 
               {/* Section 8 */}
