@@ -124,6 +124,13 @@ const Privacy = () => {
                   <li>Detect and prevent fraud, abuse, and security threats</li>
                   <li>Comply with legal obligations</li>
                 </ul>
+
+                <h3 className="text-xl font-medium text-rain-deep mt-6 mb-3">
+                  Apple In-App Purchases
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Subscriptions purchased within the RainWatr iOS application are processed through Apple's In-App Purchase system. Payments are billed to your Apple ID account at confirmation of purchase and will automatically renew unless cancelled at least 24 hours before the end of the current billing period. Apple manages billing and subscription management. Users may manage or cancel their subscriptions through their Apple account settings.
+                </p>
               </section>
 
               {/* Section 4 */}
