@@ -122,7 +122,7 @@ const Terms = () => {
                   RainWatr does not send unsolicited marketing messages. Messaging functionality is intended for communication between apartment locators and renters regarding apartment tours, follow-ups, and rental inquiries.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
-                  Rainwatr reserves the right to monitor messaging activity and suspend accounts that violate telecommunications carrier rules, anti-spam policies, or applicable messaging regulations.
+                  RainWatr reserves the right to monitor messaging activity and suspend accounts that violate telecommunications carrier rules, anti-spam policies, or applicable messaging regulations.
                 </p>
               </section>
 
