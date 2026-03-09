@@ -157,7 +157,7 @@ const Privacy = () => {
                   User Consent & Opt-Out
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  Users may send SMS messages to renters through Rainwatr's messaging features. By enabling messaging features within Rainwatr, users confirm they have obtained appropriate consent from recipients before sending messages.
+                  Users may send SMS messages to renters through RainWatr's messaging features. By enabling messaging features within RainWatr, users confirm they have obtained appropriate consent from recipients before sending messages.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   Recipients may opt out of SMS communications at any time by replying <strong>STOP</strong>.
