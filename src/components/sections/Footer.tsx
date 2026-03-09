@@ -39,6 +39,9 @@ const Footer = () => {
             <Link to="/sms-consent" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               SMS Policy
             </Link>
+            <Link to="/delete-account" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              Delete Account
+            </Link>
             <a href="mailto:support@rainwatr.app" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Contact
             </a>
