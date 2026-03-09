@@ -167,7 +167,7 @@ const Privacy = () => {
                   Message frequency varies depending on communication activity. <strong>Message and data rates may apply.</strong>
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
-                  Rainwatr does not send unsolicited marketing messages. Messaging is limited to communication initiated by the locator in connection with renter inquiries, tours, follow-ups, or related service activity.
+                  RainWatr does not send unsolicited marketing messages. Messaging is limited to communication initiated by the locator in connection with renter inquiries, tours, follow-ups, or related service activity.
                 </p>
               </section>
 
