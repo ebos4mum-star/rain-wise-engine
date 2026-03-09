@@ -112,17 +112,20 @@ const Terms = () => {
                   SMS Opt-Out & Assistance
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  Recipients of SMS messages sent through Rainwatr may opt out at any time by replying <strong>STOP</strong> to the message.
+                  Recipients of SMS messages sent through RainWatr may opt out at any time by replying <strong>STOP</strong> to the message.
                   {" "}For assistance, recipients may reply <strong>HELP</strong>.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   Message frequency varies depending on communication activity. <strong>Message and data rates may apply.</strong>
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
-                  Rainwatr does not send unsolicited marketing messages. Messaging functionality is intended for communication between apartment locators and renters regarding apartment tours, follow-ups, and rental inquiries.
+                  RainWatr does not send unsolicited marketing messages. Messaging functionality is intended for communication between apartment locators and renters regarding apartment tours, follow-ups, and rental inquiries.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
-                  Rainwatr reserves the right to monitor messaging activity and suspend accounts that violate telecommunications carrier rules, anti-spam policies, or applicable messaging regulations.
+                  RainWatr reserves the right to monitor messaging activity and suspend accounts that violate telecommunications carrier rules, anti-spam policies, or applicable messaging regulations.
+                </p>
+                <p className="text-foreground/80 leading-relaxed mt-4">
+                  Users are responsible for complying with all applicable telecommunications laws and regulations, including consent requirements and opt-out processing required by wireless carriers.
                 </p>
               </section>
 
@@ -158,6 +161,13 @@ const Terms = () => {
                   <li>We reserve the right to change pricing with reasonable notice</li>
                   <li>Failure to pay may result in suspension or termination of your account</li>
                 </ul>
+
+                <h3 className="text-xl font-medium text-rain-deep mt-6 mb-3">
+                  Apple In-App Purchases
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  If you subscribe through the RainWatr iOS application, payment will be charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current billing period. Apple manages all billing, renewals, and cancellations for in-app subscriptions. Users may manage or cancel their subscriptions through their Apple account settings.
+                </p>
               </section>
 
               {/* Section 8 */}
