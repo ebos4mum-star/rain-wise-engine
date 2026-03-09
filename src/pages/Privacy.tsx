@@ -124,6 +124,13 @@ const Privacy = () => {
                   <li>Detect and prevent fraud, abuse, and security threats</li>
                   <li>Comply with legal obligations</li>
                 </ul>
+
+                <h3 className="text-xl font-medium text-rain-deep mt-6 mb-3">
+                  Apple In-App Purchases
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Subscriptions purchased within the RainWatr iOS application are processed through Apple's In-App Purchase system. Payments are billed to your Apple ID account at confirmation of purchase and will automatically renew unless cancelled at least 24 hours before the end of the current billing period. Apple manages billing and subscription management. Users may manage or cancel their subscriptions through their Apple account settings.
+                </p>
               </section>
 
               {/* Section 4 */}
@@ -150,7 +157,7 @@ const Privacy = () => {
                   User Consent & Opt-Out
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  Users may send SMS messages to renters through Rainwatr's messaging features. By enabling messaging features within Rainwatr, users confirm they have obtained appropriate consent from recipients before sending messages.
+                  Users may send SMS messages to renters through RainWatr's messaging features. By enabling messaging features within RainWatr, users confirm they have obtained appropriate consent from recipients before sending messages.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   Recipients may opt out of SMS communications at any time by replying <strong>STOP</strong>.
@@ -160,7 +167,7 @@ const Privacy = () => {
                   Message frequency varies depending on communication activity. <strong>Message and data rates may apply.</strong>
                 </p>
                 <p className="text-foreground/80 leading-relaxed mt-4">
-                  Rainwatr does not send unsolicited marketing messages. Messaging is limited to communication initiated by the locator in connection with renter inquiries, tours, follow-ups, or related service activity.
+                  RainWatr does not send unsolicited marketing messages. Messaging is limited to communication initiated by the locator in connection with renter inquiries, tours, follow-ups, or related service activity.
                 </p>
               </section>
 
@@ -200,7 +207,7 @@ const Privacy = () => {
                   We may share information with third parties only in the following circumstances:
                 </p>
                 <ul className="list-disc list-inside text-foreground/80 mt-4 space-y-2">
-                  <li><strong>Service providers:</strong> Companies that help us deliver the Service (SMS providers, cloud hosting, payment processors, analytics tools). SMS messaging services may be provided by third-party telecommunications providers that enable message delivery.</li>
+                  <li><strong>Service providers:</strong> Companies that help us deliver the Service (SMS providers, cloud hosting, payment processors, analytics tools). SMS messaging services are provided through third-party telecommunications providers such as Telnyx or similar messaging infrastructure providers that facilitate message delivery.</li>
                   <li><strong>Legal compliance:</strong> When required by law, subpoena, or government request</li>
                   <li><strong>Safety and security:</strong> To protect against fraud, abuse, or security threats</li>
                   <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
@@ -266,6 +273,7 @@ const Privacy = () => {
                   <li><strong>Export:</strong> Request a portable copy of your data in a common format</li>
                   <li><strong>Opt-out:</strong> Opt out of marketing communications at any time</li>
                   <li><strong>Restriction:</strong> Request restriction of processing in certain circumstances</li>
+                  <li><strong>Account Deletion:</strong> You may request deletion of your RainWatr account and associated data by contacting support or using the account deletion option within the application settings.</li>
                 </ul>
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   To exercise any of these rights, please contact us at privacy@rainwatr.com. We will respond to your request within the timeframe required by applicable law.
@@ -324,6 +332,13 @@ const Privacy = () => {
                 </div>
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   We will respond to all privacy-related inquiries within 30 days.
+                </p>
+
+                <h3 className="text-xl font-medium text-rain-deep mt-6 mb-3">
+                  Governing Law
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  This Privacy Policy shall be governed by and construed in accordance with the laws of the United States and the state in which RainWatr operates, without regard to conflict of law provisions.
                 </p>
               </section>
 
