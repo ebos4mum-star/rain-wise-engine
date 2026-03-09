@@ -124,6 +124,9 @@ const Terms = () => {
                 <p className="text-foreground/80 leading-relaxed mt-4">
                   RainWatr reserves the right to monitor messaging activity and suspend accounts that violate telecommunications carrier rules, anti-spam policies, or applicable messaging regulations.
                 </p>
+                <p className="text-foreground/80 leading-relaxed mt-4">
+                  Users are responsible for complying with all applicable telecommunications laws and regulations, including consent requirements and opt-out processing required by wireless carriers.
+                </p>
               </section>
 
               {/* Section 6 */}
