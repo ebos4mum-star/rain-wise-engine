@@ -10,6 +10,7 @@ import FAQ from "./pages/FAQ";
 import Pricing from "./pages/Pricing";
 import Support from "./pages/Support";
 import SmsConsent from "./pages/SmsConsent";
+import DeleteAccount from "./pages/DeleteAccount";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/support" element={<Support />} />
           <Route path="/sms-consent" element={<SmsConsent />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
