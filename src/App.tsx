@@ -36,6 +36,7 @@ const App = () => (
           <Route path="/support" element={<Support />} />
           <Route path="/sms-consent" element={<SmsConsent />} />
           <Route path="/delete-account" element={<DeleteAccount />} />
+          <Route path="/download" element={<Download />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
