@@ -11,8 +11,7 @@ const Download = () => {
         Track renters, follow-ups, tours, and commissions in one place.
       </p>
       <a
-        href="https://apple.co/4cK0Lt5"
-        target="_blank"
+        href="https://apps.apple.com/us/app/rainwatr/id6759077977"
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center rounded-full bg-foreground text-background px-8 py-3.5 text-base font-semibold transition-opacity hover:opacity-90"
       >
