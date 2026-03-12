@@ -78,21 +78,26 @@ const Hero = () => {
             </div>
 
             {/* App Store Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">
-              <button className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:bg-rain-deep transition-colors">
-                <Apple className="w-6 h-6" />
-                <div className="text-left">
-                  <div className="text-xs opacity-80">Download on the</div>
-                  <div className="text-sm font-semibold">App Store</div>
-                </div>
-              </button>
-              <button className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:bg-rain-deep transition-colors">
-                <Play className="w-6 h-6" />
-                <div className="text-left">
-                  <div className="text-xs opacity-80">Get it on</div>
-                  <div className="text-sm font-semibold">Google Play</div>
-                </div>
-              </button>
+            <div className="flex flex-col gap-3 items-center lg:items-start mb-8">
+              <p className="text-sm text-muted-foreground">
+                Built for apartment locators who need to track leads, follow-ups, and commissions.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a href="https://apple.co/4cK0Lt5" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:bg-rain-deep transition-colors">
+                  <Apple className="w-6 h-6" />
+                  <div className="text-left">
+                    <div className="text-xs opacity-80">Download on the</div>
+                    <div className="text-sm font-semibold">App Store</div>
+                  </div>
+                </a>
+                <a href="https://apple.co/4cK0Lt5" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:bg-rain-deep transition-colors">
+                  <Play className="w-6 h-6" />
+                  <div className="text-left">
+                    <div className="text-xs opacity-80">Get it on</div>
+                    <div className="text-sm font-semibold">Google Play</div>
+                  </div>
+                </a>
+              </div>
             </div>
 
             {/* Trust line */}
