@@ -12,6 +12,7 @@ import Support from "./pages/Support";
 import SmsConsent from "./pages/SmsConsent";
 import DeleteAccount from "./pages/DeleteAccount";
 import Download from "./pages/Download";
+import Ios from "./pages/Ios";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
