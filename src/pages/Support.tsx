@@ -244,7 +244,7 @@ const Support = () => {
               Home
             </Link>
             <Link
-              to="/privacy"
+              to="/privacypolicy"
               className="hover:text-foreground transition-colors"
             >
               Privacy Policy
