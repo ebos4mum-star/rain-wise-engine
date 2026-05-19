@@ -27,7 +27,7 @@ const Footer = () => {
             <Link to="/faq" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               FAQ
             </Link>
-            <Link to="/privacy" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            <Link to="/privacypolicy" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               Privacy
             </Link>
             <Link to="/terms" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">
