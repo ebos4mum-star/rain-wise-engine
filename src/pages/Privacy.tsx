@@ -1,8 +1,29 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/sections/Footer";
 
 const Privacy = () => {
+  useEffect(() => {
+    document.title = "Rainwatr Privacy Policy";
+    const setMeta = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute("name", name);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setMeta("description", "RainWatr Privacy Policy — how we collect, use, and protect your data.");
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", "https://rainwatr.app/privacy-policy");
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Navbar />

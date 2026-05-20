@@ -81,7 +81,7 @@ const SmsConsent = () => {
 
               <div className="pt-6 border-t border-border">
                 <div className="flex gap-6">
-                  <Link to="/privacypolicy" className="text-primary hover:underline">Privacy Policy</Link>
+                  <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>
                   <Link to="/terms" className="text-primary hover:underline">Terms of Service</Link>
                 </div>
               </div>

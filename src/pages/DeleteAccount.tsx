@@ -103,7 +103,7 @@ const DeleteAccount = () => {
             )}
 
             <div className="mt-8 pt-6 border-t border-border flex gap-6">
-              <Link to="/privacypolicy" className="text-primary hover:underline text-sm">Privacy Policy</Link>
+              <Link to="/privacy-policy" className="text-primary hover:underline text-sm">Privacy Policy</Link>
               <Link to="/terms" className="text-primary hover:underline text-sm">Terms of Service</Link>
             </div>
           </motion.div>
