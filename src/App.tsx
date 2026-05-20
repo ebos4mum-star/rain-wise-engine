@@ -31,8 +31,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/terms" element={<Terms />} />
-          <Route path="/privacypolicy" element={<Privacy />} />
-          <Route path="/privacy" element={<Navigate to="/privacypolicy" replace />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/privacypolicy" element={<Navigate to="/privacy-policy" replace />} />
+          <Route path="/privacy" element={<Navigate to="/privacy-policy" replace />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/support" element={<Support />} />
